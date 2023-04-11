@@ -1,5 +1,5 @@
 import './Navbar.css';
-import { motion } from 'framer-motion';
+import { easeInOut, motion } from 'framer-motion';
 import { scroller } from 'react-scroll';
 
 function Navbar() {
@@ -9,7 +9,7 @@ function Navbar() {
       scroller.scrollTo(sectionId, {
         duration: 1600,
         delay: 0,
-        smooth: 'easeInOutQuad',
+        smooth: easeInOut,
       });
     }
   };
@@ -29,7 +29,7 @@ function Navbar() {
       </button>
       <button
         className="navbar-button navbar-button-shelby"
-        onClick={() => scrollToSection('whywe')}
+        onClick={() => scrollToSection('shelby')}
       >
         <motion.div
           whileHover={{ scale: 1.3, color: 'rgba(0, 0, 0, 0.7)' }}

@@ -1,10 +1,16 @@
 .navbar-button {
   color: black;
-  font-size: 30px;
+  font-size: 2.8rem;
   margin: 20px 40px;
   transition: transform 0.3s ease-in-out;
   text-shadow: -1px -1px 0 wheat, 1px -1px 0 wheat, -1px 1px 0 wheat,
     1px 1px 0 wheat;
+}
+
+@media (max-width: 800px) {
+  .navbar-button {
+    font-size: 1rem;
+  }
 }
 
 .navbar-container {
