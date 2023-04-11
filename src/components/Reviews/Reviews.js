@@ -13,7 +13,11 @@ function Reviews() {
       <div className="reviewsBlock">
         <div className="frow">
           <div className="Review">
-            <img src="/images/Johnny2.jpg" className="avatar"></img>
+            <img
+              src="/images/Johnny2.jpg"
+              alt="Johnny"
+              className="avatar"
+            ></img>
             <div className="sign">
               <text className="name1">Johnny Dog</text>
               <text className="quote">
@@ -22,7 +26,7 @@ function Reviews() {
             </div>
           </div>
           <div className="Review">
-            <img src="/images/Curly2.jpg" className="avatar"></img>
+            <img src="/images/Curly2.jpg" alt="Curly" className="avatar"></img>
             <div className="sign">
               <text className="name1">Curly</text>
               <text className="quote">
@@ -32,7 +36,11 @@ function Reviews() {
             </div>
           </div>
           <div className="Review">
-            <img src="/images/Michael2.jpg" className="avatar"></img>
+            <img
+              src="/images/Michael2.jpg"
+              alt="Micahel"
+              className="avatar"
+            ></img>
             <div className="sign">
               <text className="name1">Michael</text>
               <text className="quote">
@@ -43,7 +51,7 @@ function Reviews() {
         </div>
         <div className="frow">
           <div className="Review">
-            <img src="/images/Alfie2.jpg" className="avatar"></img>
+            <img src="/images/Alfie2.jpg" className="avatar" alt="Alfie"></img>
             <div className="sign">
               <text className="name1">Alfie Solomons</text>
               <text className="quote">
@@ -53,7 +61,7 @@ function Reviews() {
             </div>
           </div>
           <div className="Review">
-            <img src="/images/Luca2.jpg" className="avatar"></img>
+            <img src="/images/Luca2.jpg" className="avatar" alt="Luca"></img>
             <div className="sign">
               <text className="name1">Luca Chengretta</text>
               <text className="quote">

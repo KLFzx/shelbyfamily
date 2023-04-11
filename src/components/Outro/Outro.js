@@ -19,7 +19,7 @@ function Outro() {
           <text> Our locations</text>
         </cont>
         <cont>
-          <img src="/images/logo.png" className="imageLogo"></img>
+          <img src="/images/logo.png" alt="logo" className="imageLogo"></img>
         </cont>
         <cont>
           <text> Always keep trust</text>
