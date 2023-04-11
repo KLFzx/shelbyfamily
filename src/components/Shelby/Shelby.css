@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 1200px;
+  overflow: hidden;
+}
+
+.shelby {
+  width: 100%;
+  height: 2000px;
+  object-fit: cover;
+}
+
+.positionRelative {
+  position: relative;
+}
+
+.positionAbsolute {
+  background-image: url('../../../public/images/backText.png');
+  background-size: cover;
+
+  padding: 20px;
+  border-radius: 20px;
+
+  position: absolute;
+}
+
+.txt {
+  padding: 1rem;
+  font-size: 30px;
+  font-weight: initial;
+}
+
+.txt2 {
+  font-size: 40px;
+}
+
+.first {
+  top: 10%;
+  margin-left: 350px;
+  transform: translate(-50%, -50%);
+}
+
+.sec {
+  top: 45%;
+  right: 200px;
+  transform: translate(50%, -50%);
+}
+
+.third {
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textbox {
+  mask-image: linear-gradient(to bottom, black, transparent 0%);
+  animation: mask-animation 1s ease-in;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+.thommy2 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes mask-animation {
+  0% {
+    mask-image: linear-gradient(to bottom, black, transparent 0%);
+  }
+  5% {
+    mask-image: linear-gradient(to bottom, black, transparent 50%);
+  }
+  10% {
+    mask-image: linear-gradient(to bottom, black, transparent 100%);
+  }
+  15% {
+    mask-image: linear-gradient(to bottom, black, transparent 150%);
+  }
+  20% {
+    mask-image: linear-gradient(to bottom, black, transparent 200%);
+  }
+  25% {
+    mask-image: linear-gradient(to bottom, black, transparent 250%);
+  }
+  30% {
+    mask-image: linear-gradient(to bottom, black, transparent 300%);
+  }
+  35% {
+    mask-image: linear-gradient(to bottom, black, transparent 350%);
+  }
+  40% {
+    mask-image: linear-gradient(to bottom, black, transparent 400%);
+  }
+  45% {
+    mask-image: linear-gradient(to bottom, black, transparent 450%);
+  }
+  50% {
+    mask-image: linear-gradient(to bottom, black, transparent 500%);
+  }
+  55% {
+    mask-image: linear-gradient(to bottom, black, transparent 550%);
+  }
+  60% {
+    mask-image: linear-gradient(to bottom, black, transparent 600%);
+  }
+  65% {
+    mask-image: linear-gradient(to bottom, black, transparent 650%);
+  }
+  70% {
+    mask-image: linear-gradient(to bottom, black, transparent 700%);
+  }
+  75% {
+    mask-image: linear-gradient(to bottom, black, transparent 750%);
+  }
+  80% {
+    mask-image: linear-gradient(to bottom, black, transparent 800%);
+  }
+  85% {
+    mask-image: linear-gradient(to bottom, black, transparent 850%);
+  }
+  90% {
+    mask-image: linear-gradient(to bottom, black, transparent 900%);
+  }
+  95% {
+    mask-image: linear-gradient(to bottom, black, transparent 950%);
+  }
+  100% {
+    mask-image: linear-gradient(to bottom, black, transparent 950%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .third {
+    left: 0;
+    margin: 0 20px;
+    transform: translateY(-50%);
+  }
+}

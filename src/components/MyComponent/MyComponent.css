@@ -1,0 +1,70 @@
+.header-image figure {
+  mask-image: linear-gradient(to bottom, black, transparent 1000%);
+  animation: mask-animation 1s ease-in-out;
+}
+
+@keyframes mask-animation {
+  0% {
+    mask-image: linear-gradient(to bottom, black, transparent 0%);
+  }
+  5% {
+    mask-image: linear-gradient(to bottom, black, transparent 5%);
+  }
+  10% {
+    mask-image: linear-gradient(to bottom, black, transparent 10%);
+  }
+  15% {
+    mask-image: linear-gradient(to bottom, black, transparent 15%);
+  }
+  20% {
+    mask-image: linear-gradient(to bottom, black, transparent 20%);
+  }
+  25% {
+    mask-image: linear-gradient(to bottom, black, transparent 25%);
+  }
+  30% {
+    mask-image: linear-gradient(to bottom, black, transparent 30%);
+  }
+  35% {
+    mask-image: linear-gradient(to bottom, black, transparent 35%);
+  }
+  40% {
+    mask-image: linear-gradient(to bottom, black, transparent 40%);
+  }
+  45% {
+    mask-image: linear-gradient(to bottom, black, transparent 45%);
+  }
+  50% {
+    mask-image: linear-gradient(to bottom, black, transparent 50%);
+  }
+  55% {
+    mask-image: linear-gradient(to bottom, black, transparent 55%);
+  }
+  60% {
+    mask-image: linear-gradient(to bottom, black, transparent 60%);
+  }
+  65% {
+    mask-image: linear-gradient(to bottom, black, transparent 65%);
+  }
+  70% {
+    mask-image: linear-gradient(to bottom, black, transparent 70%);
+  }
+  75% {
+    mask-image: linear-gradient(to bottom, black, transparent 75%);
+  }
+  80% {
+    mask-image: linear-gradient(to bottom, black, transparent 80%);
+  }
+  85% {
+    mask-image: linear-gradient(to bottom, black, transparent 85%);
+  }
+  90% {
+    mask-image: linear-gradient(to bottom, black, transparent 90%);
+  }
+  95% {
+    mask-image: linear-gradient(to bottom, black, transparent 95%);
+  }
+  100% {
+    mask-image: linear-gradient(to bottom, black, transparent 1000%);
+  }
+}

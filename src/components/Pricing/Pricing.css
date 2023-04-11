@@ -1,0 +1,130 @@
+.container3 {
+  width: 100%;
+
+  /* border-bottom: 2px solid black; */
+  margin-bottom: 2rem;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.boxes1 {
+  display: grid;
+  grid-template-columns: 2fr minmax(365px, 1fr);
+
+  /* background-image: url('../../../public/images/Garisson.jpg'); */
+}
+
+.f2 {
+  display: flex;
+  flex-grow: 2;
+  /* border: 2px solid red; */
+  align-items: center;
+  justify-content: center;
+}
+
+.s1 {
+  flex-grow: 1;
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.paid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid white; */
+  background-image: url('../../../public/images/backText.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1rem;
+  width: 30%;
+  position: relative;
+}
+
+.buy {
+  display: flex;
+
+  color: white;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.aboutpricing {
+  background-image: url('../../../public/images/backText.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: left;
+
+  width: 80%;
+  /* border: 2px solid blue; */
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.aboutpricing > h1 {
+  margin-left: 55px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  width: 80%;
+}
+
+.question > text1 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.question > text {
+  font-weight: lighter;
+  font-size: 25px;
+  margin-left: 25px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid black;
+}
+
+.question.l > text {
+  border-bottom: 0px;
+}
+
+.butt {
+  position: absolute;
+  height: 70%;
+  top: 70%;
+  left: 60%;
+  transform: translate(-70%, -60%);
+  z-index: 11;
+}
+
+@media (max-width: 1636px) {
+  .butt {
+    top: 70%;
+    left: 40%;
+    transform: translate(-70%, -40%);
+  }
+}
+
+@media (max-width: 768px) {
+  .boxes1 {
+    grid-template-columns: 1fr;
+  }
+}

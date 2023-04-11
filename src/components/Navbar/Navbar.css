@@ -1,0 +1,65 @@
+.navbar-button {
+  color: black;
+  font-size: 30px;
+  margin: 20px 40px;
+  transition: transform 0.3s ease-in-out;
+  text-shadow: -1px -1px 0 wheat, 1px -1px 0 wheat, -1px 1px 0 wheat,
+    1px 1px 0 wheat;
+}
+
+.navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* border-bottom: 2px solid black; */
+}
+
+.navbar-button-shelby {
+  animation: slideIn 1.4s ease-in-out forwards;
+  font-size: 50px;
+  z-index: 10;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0);
+    transform: scale(1.3);
+  }
+}
+
+.navbar-button-home {
+  transform: translateX(-200%);
+  animation: slideInLeft 1s ease-in-out forwards;
+  animation-delay: 1s;
+  color: black;
+}
+
+.navbar-button-about {
+  transform: translateX(200%);
+  animation: slideInRight 1s ease-in-out forwards;
+  animation-delay: 1s;
+  color: black;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+    transform: scale(1.2);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+    transform: scale(1.2);
+  }
+}

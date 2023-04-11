@@ -1,0 +1,45 @@
+.container5 {
+  display: column;
+  flex-direction: column;
+}
+
+.frow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.sign {
+  background-image: url('../../../public/images/backText.png');
+  background-position: top bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 300px;
+}
+.name1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.quote {
+  font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+  .frow {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1000px) {
+  .sign {
+    margin-bottom: 30px;
+  }
+}

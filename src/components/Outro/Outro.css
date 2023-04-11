@@ -1,0 +1,51 @@
+.container4 {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.outro {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: -13px;
+  width: 100%;
+}
+
+.outro > cont {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+}
+
+.outro > cont > text {
+  color: wheat;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.imageLogo {
+  height: 200px;
+  margin-right: 34px;
+}
+
+@media (max-width: 1000px) {
+  .imageLogo {
+    margin-right: 0px;
+  }
+}
+
+.endingPhrase {
+  /* color: rgb(190, 142, 53); */
+  color: black;
+  padding: 17px;
+  background-image: url('../../../public/images/backText.png');
+  background-position: top center;
+  background-size: cover;
+}
+
+.outro > cont {
+}

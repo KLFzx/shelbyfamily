@@ -1,0 +1,19 @@
+.titleBig {
+  text-align: center;
+
+  text-decoration: underline;
+  font-size: 50px;
+  font-weight: bold;
+
+  padding: 10px;
+  padding-bottom: 20px;
+  border-radius: 1rem;
+  text-shadow: -1px -1px 0 wheat, 1px -1px 0 wheat, -1px 1px 0 wheat,
+    1px 1px 0 wheat;
+}
+
+.backTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
