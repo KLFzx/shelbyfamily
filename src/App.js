@@ -10,25 +10,10 @@ import Home from "./pages/Home/Home";
 import Terms from "./pages/Terms/Terms";
 import Main from "./pages/Main/Main";
 import { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
-  let component;
   const [language, setLanguage] = useState(0);
-
-  switch (window.location.pathname) {
-    case "/":
-      component = <Main lang={language}></Main>;
-      break;
-    case "/terms":
-      component = <Terms lang={language} />;
-      break;
-    case "/vpn":
-      component = <Home lang={language} />;
-      break;
-    default:
-      component = <Main lang={language}></Main>;
-      break;
-  }
 
   useEffect(() => {
     if (localStorage.lang) setLanguage(localStorage.lang);
@@ -38,9 +23,14 @@ function App() {
 
   return (
     <div className="App">
+      <Routes>
+        <Route path="/" element={<Main lang={language}></Main>}></Route>
+        <Route path="/vpn" element={<Home lang={language}></Home>}></Route>
+        <Route path="/terms" element={<Terms lang={language} />}></Route>
+      </Routes>
+
       <div className="back"></div>
 
-      {component}
       <Outro lang={language}></Outro>
     </div>
   );

@@ -7,7 +7,7 @@ export default function Terms() {
   return (
     <>
       <section className="navbar-container" id="navbar">
-        <a className="navbar-button navbar-button-home" href="/">
+        <a className="navbar-button navbar-button-home" href="/vpn">
           <motion.div
             whileHover={{ scale: 1.2, color: "rgba(0, 0, 0, 0.7)" }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
