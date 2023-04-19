@@ -1,7 +1,9 @@
-import { motion } from 'framer-motion';
-import './Shelby.css';
+import { motion } from "framer-motion";
+import "./Shelby.css";
 
-function Shelby() {
+import { dict } from "../../Lan";
+
+function Shelby(props) {
   const containerVariants = {
     hidden: {
       opacity: 0,
@@ -11,7 +13,7 @@ function Shelby() {
       transition: {
         delay: 1,
         staggerChildren: 1.2,
-        ease: 'easeOut',
+        ease: "easeOut",
         duration: 0.5,
       },
     },
@@ -27,7 +29,7 @@ function Shelby() {
       y: 0,
       transition: {
         delay: 2,
-        ease: 'easeOut',
+        ease: "easeOut",
         duration: 1,
       },
     },
@@ -43,7 +45,7 @@ function Shelby() {
       y: 0,
       transition: {
         delay: 3,
-        ease: 'easeOut',
+        ease: "easeOut",
         duration: 1,
       },
     },
@@ -59,7 +61,7 @@ function Shelby() {
       y: 0,
       transition: {
         delay: 4,
-        ease: 'easeOut',
+        ease: "easeOut",
         duration: 1,
       },
     },
@@ -84,15 +86,13 @@ function Shelby() {
         </motion.div>
 
         <div className=" textbox positionAbsolute first ">
-          <h1 className="txt">
-            Shelby family has been rulling the Birninghem since 1886.
-          </h1>
+          <h1 className="txt">{dict.t1[props.lang]}</h1>
         </div>
         <div className=" textbox positionAbsolute sec ">
-          <h1 className="txt">We know every person in the town.</h1>
+          <h1 className="txt">{dict.t2[props.lang]}</h1>
         </div>
         <div className=" textbox positionAbsolute third ">
-          <h1 className="txt">This is why we offer you...</h1>
+          <h1 className="txt">{dict.t3[props.lang]}</h1>
           <h1 className="txt txt2">SHELBY INC. VPN.</h1>
         </div>
       </motion.div>

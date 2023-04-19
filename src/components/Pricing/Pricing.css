@@ -111,7 +111,7 @@
   height: 70%;
   top: 70%;
   left: 60%;
-  transform: translate(-70%, -60%);
+
   z-index: 11;
 }
 
@@ -127,4 +127,78 @@
   .boxes1 {
     grid-template-columns: 1fr;
   }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal {
+  background-image: url('../../../public/images/backText.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40rem;
+  width: 40rem;
+  padding: 20px;
+  position: relative;
+  animation: fade-in 0.3s ease-in-out;
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  .modal {
+    height: 20rem;
+    width: 20rem;
+    font-size: 30px;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close {
+  background-image: url('../../../public/cross.svg');
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+.buttFinal {
+  width: 50%;
+  height: 50%;
+
+}
+
+.my-link {
+  color: black;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+.my-link:hover {
+  color: white;
+  animation: fade-in 0.3s ease-in-out;
 }

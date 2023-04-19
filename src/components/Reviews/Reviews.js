@@ -1,12 +1,13 @@
-import { motion } from 'framer-motion';
-import './Reviews.css';
+import { motion } from "framer-motion";
+import "./Reviews.css";
+import { dict } from "../../Lan";
 
-function Reviews() {
+function Reviews(props) {
   return (
     <section className="container5" id="reviews">
-      <motion.div whileInView={{ scale: 1.2 }} transition={{ duration: 1.3 }}>
+      <motion.div whileInView={{ scale: 1.1 }} transition={{ duration: 1.3 }}>
         <div className="backTitle">
-          <h1 className="titleBig">Our first class people</h1>
+          <h1 className="titleBig">{dict.firstclass[props.lang]}</h1>
         </div>
       </motion.div>
 
@@ -19,19 +20,18 @@ function Reviews() {
               className="avatar"
             ></img>
             <div className="sign">
-              <text className="name1">Johnny Dog</text>
-              <text className="quote">
-                "I never let anyone get past my back"
-              </text>
+              <text className="name1">{dict.dog[props.lang]}</text>
+              <text className="quote">"{dict.dog2[props.lang]}"</text>
             </div>
           </div>
           <div className="Review">
             <img src="/images/Curly2.jpg" alt="Curly" className="avatar"></img>
             <div className="sign">
-              <text className="name1">Curly</text>
+              <text className="name1">{dict.curly[props.lang]}</text>
               <text className="quote">
-                "I've raised Thomas from his pillows.
-                <br></br>I know that this damn boy will change the world"
+                "{dict.curly2[props.lang]}
+                <br></br>
+                {dict.curly3[props.lang]}"
               </text>
             </div>
           </div>
@@ -42,10 +42,8 @@ function Reviews() {
               className="avatar"
             ></img>
             <div className="sign">
-              <text className="name1">Michael</text>
-              <text className="quote">
-                "I admire and disguise him at the same time"
-              </text>
+              <text className="name1">{dict.michael[props.lang]}</text>
+              <text className="quote">"{dict.michael2[props.lang]}"</text>
             </div>
           </div>
         </div>
@@ -53,20 +51,15 @@ function Reviews() {
           <div className="Review">
             <img src="/images/Alfie2.jpg" className="avatar" alt="Alfie"></img>
             <div className="sign">
-              <text className="name1">Alfie Solomons</text>
-              <text className="quote">
-                "Even though he is my enemy I've made a good bussiness with
-                them"
-              </text>
+              <text className="name1">{dict.alfie[props.lang]}</text>
+              <text className="quote">"{dict.alfie2[props.lang]}"</text>
             </div>
           </div>
           <div className="Review">
             <img src="/images/Luca2.jpg" className="avatar" alt="Luca"></img>
             <div className="sign">
-              <text className="name1">Luca Chengretta</text>
-              <text className="quote">
-                "He calls me Maccaronni, I call him Billy Bonny"
-              </text>
+              <text className="name1">{dict.luca[props.lang]}</text>
+              <text className="quote">"{dict.luca2[props.lang]}"</text>
             </div>
           </div>
         </div>

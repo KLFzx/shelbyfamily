@@ -42,7 +42,9 @@
   /* color: rgb(190, 142, 53); */
   color: black;
   padding: 17px;
-  background-image: url('../../../public/images/backText.png');
+
+  margin-bottom: 16px;
+  background-image: url("../../../public/images/backText.png");
   background-position: top center;
   background-size: cover;
 }
