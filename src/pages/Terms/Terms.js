@@ -81,7 +81,6 @@ export default function Terms() {
           any modifications to you in a timely and efficient manner. And if
           anyone tries to mess with our customers, they'll have to answer to us.
         </h2>
-        <h2></h2>
       </div>
     </>
   );

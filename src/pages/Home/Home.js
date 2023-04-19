@@ -6,8 +6,6 @@ import Pricing from "../../components/Pricing/Pricing";
 
 import Reviews from "../../components/Reviews/Reviews";
 
-import Outro from "../../components/Outro/Outro";
-
 import Navbar from "../../components/Navbar/Navbar";
 
 export default function Home(props) {

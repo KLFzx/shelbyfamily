@@ -23,7 +23,7 @@ export default function Main(props) {
   useEffect(() => {
     setLanguage(props.lang);
     console.log(props.lang);
-  }, []);
+  }, [props.lang]);
 
   return (
     <div className="inner">

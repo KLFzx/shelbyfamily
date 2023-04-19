@@ -1,10 +1,10 @@
 import "./App.css";
-import Shelby from "./components/Shelby/Shelby";
-import Navbar from "./components/Navbar/Navbar";
-import About from "./components/About/About";
-import Pricing from "./components/Pricing/Pricing";
+// import Shelby from "./components/Shelby/Shelby";
+// import Navbar from "./components/Navbar/Navbar";
+// import About from "./components/About/About";
+// import Pricing from "./components/Pricing/Pricing";
+// import Reviews from "./components/Reviews/Reviews";
 import Outro from "./components/Outro/Outro";
-import Reviews from "./components/Reviews/Reviews";
 
 import Home from "./pages/Home/Home";
 import Terms from "./pages/Terms/Terms";
@@ -25,13 +25,16 @@ function App() {
     case "/vpn":
       component = <Home lang={language} />;
       break;
+    default:
+      component = <Main lang={language}></Main>;
+      break;
   }
 
   useEffect(() => {
     if (localStorage.lang) setLanguage(localStorage.lang);
     else setLanguage(0);
     console.log(language);
-  }, []);
+  }, [language]);
 
   return (
     <div className="App">
